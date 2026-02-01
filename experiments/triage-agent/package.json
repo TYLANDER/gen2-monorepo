@@ -1,0 +1,34 @@
+{
+  "name": "@gen2/triage-agent",
+  "version": "0.1.0",
+  "description": "Gatekeeper for AI-generated code - semantic, security, and style validation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "triage": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest",
+    "lint": "eslint src/",
+    "format": "prettier --write src/"
+  },
+  "keywords": [
+    "ai",
+    "code-review",
+    "triage",
+    "security",
+    "linting"
+  ],
+  "author": "Gen2 Research",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "tsx": "^4.0.0",
+    "vitest": "^2.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  }
+}
